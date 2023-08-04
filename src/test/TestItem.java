@@ -1,8 +1,6 @@
 package test;
 
 import model.Item;
-import model.RegularItem;
-import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 
 import java.text.ParseException;

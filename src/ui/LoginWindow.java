@@ -22,7 +22,7 @@ public class LoginWindow extends JFrame implements ActionListener {
     public LoginWindow(){
         super("TodoList Application");
         setDefaultCloseOperation(EXIT_ON_CLOSE);
-        setPreferredSize(new Dimension(500, 300));
+        setPreferredSize(new Dimension(500, 350));
         ((JPanel) getContentPane()).setBorder(new EmptyBorder(13, 13, 13, 13) );
         setLayout(null);
         try {
@@ -32,8 +32,8 @@ public class LoginWindow extends JFrame implements ActionListener {
             e.printStackTrace();
         }
 
-        JLabel welcome = new JLabel("Welcome to the CPSC 210 Project for 2018W1!", JLabel.CENTER);
-        welcome.setBounds(48,40, 300,20);
+        JLabel welcome = new JLabel("Welcome to the Todo List Application :D", JLabel.CENTER);
+        welcome.setBounds(42,40, 280,20);
         add(welcome);
         welcome.setForeground(Color.white);
 
@@ -42,21 +42,26 @@ public class LoginWindow extends JFrame implements ActionListener {
         add(enterYourUsername);
         enterYourUsername.setForeground(Color.white);
 
+        JLabel defaultName = new JLabel("(default:admin)(PW:0)", JLabel.CENTER);
+        defaultName.setBounds(42,100, 200,20);
+        add(defaultName);
+        defaultName.setForeground(Color.white);
+
         username = new JTextField(10);
-        username.setBounds(50,100, 100,20);
+        username.setBounds(50,130, 100,20);
         add(username);
 
         JLabel enterYourPassword = new JLabel("Please enter your password (Numbers Only)");
-        enterYourPassword.setBounds(53,150, 400,20);
+        enterYourPassword.setBounds(53,180, 400,20);
         add(enterYourPassword);
         enterYourPassword.setForeground(Color.white);
 
         userpasswords = new JPasswordField();
-        userpasswords.setBounds(50,180, 100,20);
+        userpasswords.setBounds(50,210, 100,20);
         add(userpasswords);
 
         JButton btn = new JButton("Enter");
-        btn.setBounds(220,240, 60,20);
+        btn.setBounds(220,270, 60,20);
         add(btn);
         btn.setBorder(new OptionWindow.RoundedBorder(10));
         btn.setForeground(Color.white);
