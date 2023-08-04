@@ -22,7 +22,7 @@ public class ViewListWindow extends JFrame implements ActionListener{
 
     public ViewListWindow(){
         try {
-            BufferedImage myImage = ImageIO.read(new File("src/ui/images/1.jpg"));
+            BufferedImage myImage = ImageIO.read(new File("src/ui/images/3.png"));
             setContentPane(new ImagePanel(myImage));
         } catch (IOException e) {
             e.printStackTrace();
